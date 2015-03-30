@@ -5,6 +5,7 @@ import (
     "html/template"
     "os"
     "path/filepath"
+    "time"
     "github.com/nathanwinther/go-feedparser"
     "follow/config"
     "follow/feeds"
@@ -36,6 +37,8 @@ func main() {
     }
 
     posts.Reset()
+
+    fmt.Println(time.Now().Format(time.RFC1123Z))
 
     for _, f := range _feeds {
         fmt.Printf("=> %s\n", f.Title)
