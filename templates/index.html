@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width">
+<title>Follow</title>
+{{template "ga.html"}}
+<link rel="apple-touch-icon-precomposed" href="/follow/icon114.png">
+<style>
+{{template "style.css"}}
+</style>
+</head>
+<body>
+
+<div id="chrome">
+    <div id="posts">
+        {{range .Posts}}
+        <p>
+            <a href="{{.Url}}" target="_blank">
+                <span class="site">{{.Site}}</span>
+                <span class="title">{{.Title}}</span>
+                <span class="date">{{.Published.MMM}} {{.Published.D}} {{.Published.YYYY}} {{.Published.HR}}:{{.Published.MIN}} {{.Published.AMPM}}</span>
+            </a>
+        </p>
+        {{end}}
+    </div>
+
+    <div id="feeds">
+        {{range .Feeds}}
+        <p>
+            <a href="{{.Url}}" target="_blank">{{.Title}}</a>
+        </p>
+        {{end}}
+    </div>
+</div>
+
+</body>
+</html>
+

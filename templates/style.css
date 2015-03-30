@@ -1,0 +1,54 @@
+html, body {
+    background-color: #ccc;
+    color: #282825;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #282825;
+    text-decoration: none;
+}
+
+#chrome {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+
+#posts {
+    background-color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #ccc;
+    margin: 0;
+    padding: 0 10%;
+}
+
+#posts p a {
+    display: block;
+}
+
+#posts p a span.site {
+    font-weight: bold;
+}
+
+#posts p a span.date {
+    color: #999;
+    display: block;
+}
+
+#feeds {
+    margin: 0;
+    padding: 0 10%;
+}
+
+#feeds p a {
+    font-weight: bold;
+}
+
+p {
+    margin: 1.25em 0;
+    padding: 0;
+}

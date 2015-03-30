@@ -1,0 +1,6 @@
+.DS_Store
+bin/
+data/**
+htdocs/follow/index.html
+pkg/
+src/github.com/**
